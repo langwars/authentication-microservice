@@ -1,0 +1,732 @@
+2024-12-24 17:58:44,307 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2024-12-24 17:58:44,315 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2024-12-24 17:58:44,315 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: Version 5.6.3
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: java.version=21.0.5
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: os.name=Mac OS X
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: os.arch=aarch64
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: os.version=14.6.1
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: file.encoding=UTF-8
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: java.awt.headless=true
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: Max memory     =1073741824
+2024-12-24 17:58:44,317 INFO o.a.j.JMeter: Available Processors =16
+2024-12-24 17:58:44,321 INFO o.a.j.JMeter: Default Locale=English (EN)
+2024-12-24 17:58:44,321 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2024-12-24 17:58:44,321 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2024-12-24 17:58:44,322 INFO o.a.j.JMeter: user.dir  =/Users/tmin/Code/active/yt_language_benchmark
+2024-12-24 17:58:44,322 INFO o.a.j.JMeter: PWD       =/Users/tmin/Code/active/yt_language_benchmark
+2024-12-24 17:58:44,323 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: GLaDOS.local FullName: localhost
+2024-12-24 17:58:44,327 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web'
+2024-12-24 17:58:44,328 INFO o.a.j.s.FileServer: Default base='/Users/tmin/Code/active/yt_language_benchmark'
+2024-12-24 17:58:44,328 INFO o.a.j.s.FileServer: Set new base='/Users/tmin/Code/active/yt_language_benchmark/benchmark'
+2024-12-24 17:58:44,393 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2024-12-24 17:58:44,412 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2024-12-24 17:58:44,413 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2024-12-24 17:58:44,415 INFO o.a.j.s.SaveService: Loading file: benchmark/AuthMicroservicePlan.jmx
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2024-12-24 17:58:44,441 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2024-12-24 17:58:44,459 INFO o.a.j.JMeter: Creating summariser <summary>
+2024-12-24 17:58:44,460 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2024-12-24 17:58:44,460 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: benchmark/llm/results-csharp/results.csv
+2024-12-24 17:58:44,460 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2024-12-24 17:58:44,461 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2024-12-24 17:58:44,462 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2024-12-24 17:58:44,463 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2024-12-24 17:58:44,464 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,464 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,464 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2024-12-24 17:58:44,465 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2024-12-24 17:58:44,466 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2024-12-24 17:58:44,466 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2024-12-24 17:58:44,466 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2024-12-24 17:58:44,471 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-12-24 17:58:44,471 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-12-24 17:58:44,471 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-12-24 17:58:44,473 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2024-12-24 17:58:44,473 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2024-12-24 17:58:44,494 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-12-24 17:58:44,526 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-12-24 17:58:44,527 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-perfmon-2.1.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2024-12-24 17:58:44,535 INFO o.a.j.JMeter: Running test (1735059524535)
+2024-12-24 17:58:44,543 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : NodeJS
+2024-12-24 17:58:44,543 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group NodeJS.
+2024-12-24 17:58:44,543 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-12-24 17:58:44,543 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=45 delayedStart=false
+2024-12-24 17:58:44,546 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-1
+2024-12-24 17:58:44,553 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = GLaDOS.local
+2024-12-24 17:58:44,555 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2024-12-24 17:58:44,556 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2024-12-24 17:58:44,556 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2024-12-24 17:58:44,556 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2024-12-24 17:58:44,556 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2024-12-24 17:58:44,576 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-12-24 17:58:44,576 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-12-24 17:58:44,770 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-2
+2024-12-24 17:58:44,999 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-3
+2024-12-24 17:58:45,224 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-4
+2024-12-24 17:58:45,448 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-5
+2024-12-24 17:58:45,670 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-6
+2024-12-24 17:58:45,894 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-7
+2024-12-24 17:58:46,120 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-8
+2024-12-24 17:58:46,347 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-9
+2024-12-24 17:58:46,570 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-10
+2024-12-24 17:58:46,797 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-11
+2024-12-24 17:58:47,023 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-12
+2024-12-24 17:58:47,247 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-13
+2024-12-24 17:58:47,472 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-14
+2024-12-24 17:58:47,698 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-15
+2024-12-24 17:58:47,918 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-16
+2024-12-24 17:58:48,145 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-17
+2024-12-24 17:58:48,370 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-18
+2024-12-24 17:58:48,599 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-19
+2024-12-24 17:58:48,821 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-20
+2024-12-24 17:58:49,044 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-21
+2024-12-24 17:58:49,274 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-22
+2024-12-24 17:58:49,500 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-23
+2024-12-24 17:58:49,723 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-24
+2024-12-24 17:58:49,946 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-25
+2024-12-24 17:58:50,174 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-26
+2024-12-24 17:58:50,397 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-27
+2024-12-24 17:58:50,622 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-28
+2024-12-24 17:58:50,844 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-29
+2024-12-24 17:58:51,076 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-30
+2024-12-24 17:58:51,300 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-31
+2024-12-24 17:58:51,523 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-32
+2024-12-24 17:58:51,747 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-33
+2024-12-24 17:58:51,970 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-34
+2024-12-24 17:58:52,198 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-35
+2024-12-24 17:58:52,421 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-36
+2024-12-24 17:58:52,648 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-37
+2024-12-24 17:58:52,870 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-38
+2024-12-24 17:58:53,099 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-39
+2024-12-24 17:58:53,323 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-40
+2024-12-24 17:58:53,549 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-41
+2024-12-24 17:58:53,770 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-42
+2024-12-24 17:58:53,998 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-43
+2024-12-24 17:58:54,222 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-44
+2024-12-24 17:58:54,448 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-45
+2024-12-24 17:58:54,670 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-46
+2024-12-24 17:58:54,897 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-47
+2024-12-24 17:58:55,123 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-48
+2024-12-24 17:58:55,347 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-49
+2024-12-24 17:58:55,569 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-50
+2024-12-24 17:58:55,797 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-51
+2024-12-24 17:58:56,022 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-52
+2024-12-24 17:58:56,248 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-53
+2024-12-24 17:58:56,472 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-54
+2024-12-24 17:58:56,696 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-55
+2024-12-24 17:58:56,919 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-56
+2024-12-24 17:58:57,147 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-57
+2024-12-24 17:58:57,373 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-58
+2024-12-24 17:58:57,596 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-59
+2024-12-24 17:58:57,819 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-60
+2024-12-24 17:58:58,045 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-61
+2024-12-24 17:58:58,271 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-62
+2024-12-24 17:58:58,498 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-63
+2024-12-24 17:58:58,720 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-64
+2024-12-24 17:58:58,946 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-65
+2024-12-24 17:58:59,173 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-66
+2024-12-24 17:58:59,398 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-67
+2024-12-24 17:58:59,620 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-68
+2024-12-24 17:58:59,850 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-69
+2024-12-24 17:59:00,001 INFO o.a.j.r.Summariser: summary + 218502 in 00:00:15 = 14128.8/s Avg:     2 Min:     0 Max:    67 Err: 72813 (33.32%) Active: 69 Started: 69 Finished: 0
+2024-12-24 17:59:00,073 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-70
+2024-12-24 17:59:00,294 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-71
+2024-12-24 17:59:00,523 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-72
+2024-12-24 17:59:00,745 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-73
+2024-12-24 17:59:00,971 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-74
+2024-12-24 17:59:01,196 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-75
+2024-12-24 17:59:01,422 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-76
+2024-12-24 17:59:01,644 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-77
+2024-12-24 17:59:01,873 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-78
+2024-12-24 17:59:02,099 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-79
+2024-12-24 17:59:02,322 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-80
+2024-12-24 17:59:02,545 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-81
+2024-12-24 17:59:02,770 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-82
+2024-12-24 17:59:02,998 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-83
+2024-12-24 17:59:03,224 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-84
+2024-12-24 17:59:03,446 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-85
+2024-12-24 17:59:03,673 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-86
+2024-12-24 17:59:03,900 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-87
+2024-12-24 17:59:04,122 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-88
+2024-12-24 17:59:04,347 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-89
+2024-12-24 17:59:04,573 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-90
+2024-12-24 17:59:04,795 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-91
+2024-12-24 17:59:05,021 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-92
+2024-12-24 17:59:05,243 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-93
+2024-12-24 17:59:05,470 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-94
+2024-12-24 17:59:05,698 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-95
+2024-12-24 17:59:05,921 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-96
+2024-12-24 17:59:06,149 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-97
+2024-12-24 17:59:06,370 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-98
+2024-12-24 17:59:06,598 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-99
+2024-12-24 17:59:06,821 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-100
+2024-12-24 17:59:07,046 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-101
+2024-12-24 17:59:07,269 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-102
+2024-12-24 17:59:07,497 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-103
+2024-12-24 17:59:07,721 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-104
+2024-12-24 17:59:07,947 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-105
+2024-12-24 17:59:08,172 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-106
+2024-12-24 17:59:08,397 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-107
+2024-12-24 17:59:08,623 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-108
+2024-12-24 17:59:08,844 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-109
+2024-12-24 17:59:09,072 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-110
+2024-12-24 17:59:09,297 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-111
+2024-12-24 17:59:09,524 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-112
+2024-12-24 17:59:09,745 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-113
+2024-12-24 17:59:09,973 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-114
+2024-12-24 17:59:10,195 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-115
+2024-12-24 17:59:10,423 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-116
+2024-12-24 17:59:10,645 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-117
+2024-12-24 17:59:10,872 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-118
+2024-12-24 17:59:11,099 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-119
+2024-12-24 17:59:11,320 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-120
+2024-12-24 17:59:11,545 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-121
+2024-12-24 17:59:11,776 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-122
+2024-12-24 17:59:11,994 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-123
+2024-12-24 17:59:12,223 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-124
+2024-12-24 17:59:12,445 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-125
+2024-12-24 17:59:12,670 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-126
+2024-12-24 17:59:12,898 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-127
+2024-12-24 17:59:13,120 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-128
+2024-12-24 17:59:13,347 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-129
+2024-12-24 17:59:13,571 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-130
+2024-12-24 17:59:13,793 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-131
+2024-12-24 17:59:14,018 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-132
+2024-12-24 17:59:14,246 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-133
+2024-12-24 17:59:14,471 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-134
+2024-12-24 17:59:14,695 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-135
+2024-12-24 17:59:14,922 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-136
+2024-12-24 17:59:15,145 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-137
+2024-12-24 17:59:15,372 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-138
+2024-12-24 17:59:15,598 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-139
+2024-12-24 17:59:15,826 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-140
+2024-12-24 17:59:16,048 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-141
+2024-12-24 17:59:16,272 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-142
+2024-12-24 17:59:16,499 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-143
+2024-12-24 17:59:16,723 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-144
+2024-12-24 17:59:16,949 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-145
+2024-12-24 17:59:17,172 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-146
+2024-12-24 17:59:17,394 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-147
+2024-12-24 17:59:17,621 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-148
+2024-12-24 17:59:17,848 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-149
+2024-12-24 17:59:18,068 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-150
+2024-12-24 17:59:18,295 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-151
+2024-12-24 17:59:18,524 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-152
+2024-12-24 17:59:18,746 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-153
+2024-12-24 17:59:18,972 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-154
+2024-12-24 17:59:19,194 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-155
+2024-12-24 17:59:19,424 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-156
+2024-12-24 17:59:19,648 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-157
+2024-12-24 17:59:19,872 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-158
+2024-12-24 17:59:20,099 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-159
+2024-12-24 17:59:20,323 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-160
+2024-12-24 17:59:20,547 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-161
+2024-12-24 17:59:20,773 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-162
+2024-12-24 17:59:20,994 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-163
+2024-12-24 17:59:21,223 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-164
+2024-12-24 17:59:21,447 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-165
+2024-12-24 17:59:21,672 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-166
+2024-12-24 17:59:21,895 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-167
+2024-12-24 17:59:22,119 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-168
+2024-12-24 17:59:22,349 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-169
+2024-12-24 17:59:22,573 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-170
+2024-12-24 17:59:22,797 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-171
+2024-12-24 17:59:23,023 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-172
+2024-12-24 17:59:23,244 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-173
+2024-12-24 17:59:23,470 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-174
+2024-12-24 17:59:23,696 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-175
+2024-12-24 17:59:23,923 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-176
+2024-12-24 17:59:24,147 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-177
+2024-12-24 17:59:24,372 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-178
+2024-12-24 17:59:24,596 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-179
+2024-12-24 17:59:24,819 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-180
+2024-12-24 17:59:25,047 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-181
+2024-12-24 17:59:25,270 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-182
+2024-12-24 17:59:25,498 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-183
+2024-12-24 17:59:25,722 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-184
+2024-12-24 17:59:25,947 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-185
+2024-12-24 17:59:26,173 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-186
+2024-12-24 17:59:26,396 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-187
+2024-12-24 17:59:26,619 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-188
+2024-12-24 17:59:26,846 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-189
+2024-12-24 17:59:27,073 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-190
+2024-12-24 17:59:27,299 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-191
+2024-12-24 17:59:27,521 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-192
+2024-12-24 17:59:27,745 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-193
+2024-12-24 17:59:27,973 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-194
+2024-12-24 17:59:28,197 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-195
+2024-12-24 17:59:28,418 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-196
+2024-12-24 17:59:28,647 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-197
+2024-12-24 17:59:28,875 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-198
+2024-12-24 17:59:29,093 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-199
+2024-12-24 17:59:29,320 INFO o.a.j.t.JMeterThread: Thread started: NodeJS 1-200
+2024-12-24 17:59:30,005 INFO o.a.j.r.Summariser: summary + 458981 in 00:00:30 = 15296.8/s Avg:     8 Min:     0 Max:    52 Err: 152945 (33.32%) Active: 200 Started: 200 Finished: 0
+2024-12-24 17:59:30,006 INFO o.a.j.r.Summariser: summary = 677483 in 00:00:45 = 14899.6/s Avg:     6 Min:     0 Max:    67 Err: 225758 (33.32%)
+2024-12-24 17:59:44,547 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-6
+2024-12-24 17:59:44,547 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-6
+2024-12-24 17:59:44,547 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-7
+2024-12-24 17:59:44,547 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-7
+2024-12-24 17:59:44,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-3
+2024-12-24 17:59:44,548 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-3
+2024-12-24 17:59:44,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-11
+2024-12-24 17:59:44,548 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-11
+2024-12-24 17:59:44,549 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-13
+2024-12-24 17:59:44,549 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-13
+2024-12-24 17:59:44,550 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-14
+2024-12-24 17:59:44,550 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-14
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-1
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-1
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-25
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-25
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-17
+2024-12-24 17:59:44,551 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-17
+2024-12-24 17:59:44,552 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-24
+2024-12-24 17:59:44,552 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-8
+2024-12-24 17:59:44,552 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-24
+2024-12-24 17:59:44,552 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-8
+2024-12-24 17:59:44,552 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-22
+2024-12-24 17:59:44,553 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-22
+2024-12-24 17:59:44,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-38
+2024-12-24 17:59:44,553 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-38
+2024-12-24 17:59:44,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-16
+2024-12-24 17:59:44,553 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-16
+2024-12-24 17:59:44,554 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-4
+2024-12-24 17:59:44,554 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-4
+2024-12-24 17:59:44,554 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-34
+2024-12-24 17:59:44,554 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-34
+2024-12-24 17:59:44,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-20
+2024-12-24 17:59:44,555 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-20
+2024-12-24 17:59:44,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-44
+2024-12-24 17:59:44,555 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-44
+2024-12-24 17:59:44,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-2
+2024-12-24 17:59:44,556 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-2
+2024-12-24 17:59:44,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-60
+2024-12-24 17:59:44,556 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-60
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-36
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-36
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-18
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-18
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-59
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-59
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-28
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-28
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-12
+2024-12-24 17:59:44,557 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-12
+2024-12-24 17:59:44,558 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-5
+2024-12-24 17:59:44,558 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-5
+2024-12-24 17:59:44,558 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-37
+2024-12-24 17:59:44,558 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-37
+2024-12-24 17:59:44,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-69
+2024-12-24 17:59:44,559 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-69
+2024-12-24 17:59:44,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-21
+2024-12-24 17:59:44,559 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-21
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-41
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-41
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-9
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-9
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-32
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-32
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-64
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-64
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-74
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-74
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-86
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-86
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-54
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-54
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-58
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-70
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-90
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-10
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-10
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-26
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-26
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-95
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-47
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-47
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-79
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-79
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-15
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-15
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-31
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-63
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-63
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-39
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-23
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-39
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-23
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-87
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-87
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-55
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-55
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-71
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-103
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-71
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-103
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-29
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-45
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-29
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-45
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-61
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-93
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-61
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-77
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-77
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-35
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-35
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-99
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-99
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-27
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-27
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-67
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-67
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-43
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-107
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-107
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-51
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-51
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-83
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-83
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-91
+2024-12-24 17:59:44,565 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-91
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-141
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-131
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-133
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-136
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-142
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-73
+2024-12-24 17:59:44,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-42
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-76
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-112
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-136
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-117
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-140
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-117
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-131
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-137
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-137
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-141
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-123
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-123
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-120
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-115
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-139
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-125
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-139
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-119
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-135
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-109
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-135
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-111
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-119
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-134
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-127
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-109
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-143
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-127
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-106
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-143
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-122
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-106
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-138
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-95
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-85
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-122
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-126
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-98
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-126
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-62
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-110
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-46
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-30
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-110
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-101
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-124
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-101
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-114
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-124
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-118
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-102
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-114
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-132
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-66
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-75
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-75
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-150
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-116
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-150
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-116
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-151
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-151
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-100
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-92
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-100
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-146
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-153
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-84
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-149
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-152
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-84
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-50
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-108
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-50
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-82
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-130
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-82
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-52
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-68
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-80
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-48
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-68
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-128
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-96
+2024-12-24 17:59:44,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-129
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-49
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-97
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-65
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-49
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-97
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-113
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-121
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-88
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-121
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-88
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-57
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-57
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-33
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-81
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-104
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-81
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-105
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-56
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-104
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-56
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-89
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-72
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-40
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-89
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-94
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-40
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-94
+2024-12-24 17:59:44,558 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-53
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-53
+2024-12-24 17:59:44,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-78
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-43
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-78
+2024-12-24 17:59:44,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-19
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-93
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-19
+2024-12-24 17:59:44,563 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-31
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-90
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-70
+2024-12-24 17:59:44,562 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-58
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-72
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-105
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-33
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-129
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-65
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-96
+2024-12-24 17:59:44,570 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-113
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-128
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-48
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-80
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-52
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-130
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-108
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-152
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-149
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-145
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-153
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-92
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-147
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-66
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-132
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-118
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-102
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-46
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-62
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-98
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-30
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-85
+2024-12-24 17:59:44,569 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-138
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-134
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-125
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-111
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-115
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-120
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-133
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-142
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-42
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-140
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-73
+2024-12-24 17:59:44,568 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-144
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-112
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-147
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-145
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-146
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-76
+2024-12-24 17:59:44,571 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-144
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-180
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-173
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-180
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-165
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-173
+2024-12-24 17:59:44,573 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-165
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-182
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-182
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-162
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-178
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-162
+2024-12-24 17:59:44,574 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-178
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-168
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-148
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-168
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-148
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-184
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-184
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-185
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-198
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-157
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-164
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-157
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-198
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-164
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-192
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-167
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-192
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-160
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-169
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-160
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-185
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-183
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-186
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-166
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-186
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-196
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-189
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-163
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-196
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-163
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-176
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-172
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-172
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-159
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-187
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-183
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-175
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-159
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-174
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-191
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-166
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-187
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-188
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-169
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-194
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-188
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-191
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-161
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-181
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-171
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-181
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-175
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-155
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-177
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-174
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-177
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-176
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-179
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-156
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-179
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-158
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-156
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-158
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-170
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-170
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-189
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-195
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-193
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-195
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-197
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-155
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-197
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-171
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-161
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-194
+2024-12-24 17:59:44,575 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-167
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-193
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-190
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-190
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-154
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-154
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-200
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-200
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NodeJS 1-199
+2024-12-24 17:59:44,576 INFO o.a.j.t.JMeterThread: Thread finished: NodeJS 1-199
+2024-12-24 17:59:44,576 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-12-24 17:59:44,577 INFO o.a.j.r.Summariser: summary + 224984 in 00:00:15 = 15440.5/s Avg:    12 Min:     0 Max:    35 Err: 75002 (33.34%) Active: 0 Started: 200 Finished: 200
+2024-12-24 17:59:44,577 INFO o.a.j.r.Summariser: summary = 902467 in 00:01:00 = 15030.6/s Avg:     8 Min:     0 Max:    67 Err: 300760 (33.33%)
+2024-12-24 17:59:44,577 INFO o.a.j.JMeter: Generating Dashboard
+2024-12-24 17:59:44,577 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2024-12-24 17:59:44,582 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2024-12-24 17:59:49,700 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2024-12-24 17:59:49,700 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2024-12-24 17:59:49,701 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2024-12-24 17:59:49,701 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2024-12-24 17:59:49,708 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2024-12-24 17:59:49,709 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2024-12-24 17:59:49,709 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2024-12-24 17:59:49,709 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2024-12-24 17:59:50,764 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2024-12-24 17:59:50,772 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2024-12-24 17:59:50,772 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2024-12-24 17:59:50,772 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2024-12-24 17:59:51,793 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2024-12-24 17:59:51,799 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 6317269 samples
+2024-12-24 17:59:51,799 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2024-12-24 17:59:51,799 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2024-12-24 17:59:51,799 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2024-12-24 17:59:51,799 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2024-12-24 17:59:51,800 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2024-12-24 17:59:51,800 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2024-12-24 17:59:51,800 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 13537005 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 2707401 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 902467 samples
+2024-12-24 17:59:51,801 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 902467 samples produced in 7s 210 ms on channel 0
+2024-12-24 17:59:51,801 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2024-12-24 17:59:51,829 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2024-12-24 17:59:51,829 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2024-12-24 17:59:51,829 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2024-12-24 17:59:51,830 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2024-12-24 17:59:51,830 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web/statistics.json
+2024-12-24 17:59:51,845 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2024-12-24 17:59:51,847 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web
+2024-12-24 17:59:51,886 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web, creating folder structure
+2024-12-24 17:59:51,887 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web', got message: /Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web, found non empty folder with following content [/Users/tmin/Code/active/yt_language_benchmark/benchmark/llm/results-csharp/web/statistics.json], will be ignored
+2024-12-24 17:59:51,979 INFO o.a.j.JMeter: Dashboard generated
