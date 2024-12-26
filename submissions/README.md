@@ -24,4 +24,9 @@ After you have cloned this repo, you create a new directory called `deeznats` in
 
 You also create a new directory called `deeznats` in the `submissions/zig` directory and add your Zig code there along with any potential instructions on how to build it.
 
-If you want to also submit a JAI implementation and the `submissions/jai` directory does not exist yet, you just create it yourself, but you still create the necessary subdirectory with your GitHub username. 
+If you want to also submit a JAI implementation and the `submissions/jai` directory does not exist yet, you just create it yourself, but you still create the necessary subdirectory with your GitHub username.
+
+## Additional Information
+
+- Other than the rules above, you can use any tricks to make your submission more performant.
+- If you have any questions, please ask them on the [Discord](https://discord.gg/3bpR9tkgTQ), or create an issue on GitHub.
