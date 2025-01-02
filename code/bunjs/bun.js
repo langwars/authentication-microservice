@@ -93,7 +93,10 @@ async function handleRegister(req) {
   if (!body || !body.email || !body.password) {
     return jsonResponse({ success: false, message: "Invalid input" }, 400);
   }
-
+  // If the email is not a valid email, return 400
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
+    return jsonResponse({ success: false, message: "Invalid email" }, 400);
+  }
   const { email, password } = body;
   if (users.has(email)) {
     return jsonResponse({ success: false, message: "User already exists" }, 400);
@@ -111,7 +114,10 @@ async function handleLogin(req) {
   if (!body || !body.email || !body.password) {
     return jsonResponse({ success: false, message: "Invalid input" }, 400);
   }
-
+  // If the email is not a valid email, return 400
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) {
+    return jsonResponse({ success: false, message: "Invalid email" }, 400);
+  }
   const { email, password } = body;
   if (!users.has(email)) {
     return jsonResponse({ success: false, message: "Invalid credentials" }, 401);
