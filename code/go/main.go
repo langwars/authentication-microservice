@@ -151,7 +151,7 @@ func registerHandler(ctx *fasthttp.RequestCtx) {
 		return
 	}
 
-	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(req.Password), 6)
 	if err != nil {
 		log.Printf("Failed to hash password: %v", err)
 		respondJSON(ctx, fasthttp.StatusInternalServerError, JSONResponse{Status: "Could not process password"})

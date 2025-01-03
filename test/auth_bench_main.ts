@@ -18,7 +18,7 @@ interface WorkerStats {
   delete: { success: boolean; status: number };
 }
 
-const WORKER_COUNT = 1000;
+const WORKER_COUNT = 100;
 let activeWorkers = WORKER_COUNT;
 
 const stats: Stats = {
