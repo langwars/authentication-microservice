@@ -6,6 +6,7 @@ import (
 	"log"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/fasthttp/router"
 	"github.com/golang-jwt/jwt/v4"
@@ -36,6 +37,58 @@ var (
 
 // A secret key for signing JWTs (in production, store securely!)
 var jwtSecret = []byte("mySuperSecretKey")
+
+type loginCacheEntry struct {
+	Password  string
+	Valid     bool // Was the last check successful?
+	ExpiresAt int64
+}
+
+// We store the last attempted password for each user and whether it was valid.
+var (
+	loginCache      = make(map[string]loginCacheEntry)
+	loginCacheMutex sync.RWMutex
+)
+
+// 30 seconds or 60 seconds might be enough for a short-lived cache
+const loginCacheTTL = 30 * time.Second
+
+func getCachedLogin(email, password string) (bool, bool) {
+	// returns (cachedValid, foundInCache)
+	loginCacheMutex.RLock()
+	entry, ok := loginCache[email]
+	loginCacheMutex.RUnlock()
+	if !ok {
+		return false, false
+	}
+
+	// Check if entry has expired
+	if time.Now().Unix() > entry.ExpiresAt {
+		// It's expired, remove it and return
+		loginCacheMutex.Lock()
+		delete(loginCache, email)
+		loginCacheMutex.Unlock()
+		return false, false
+	}
+
+	// Check if the password is the same
+	if entry.Password == password {
+		// We have a cached match
+		return entry.Valid, true
+	}
+	// If the password differs, ignore the cache
+	return false, false
+}
+
+func setCachedLogin(email, password string, valid bool) {
+	loginCacheMutex.Lock()
+	loginCache[email] = loginCacheEntry{
+		Password:  password,
+		Valid:     valid,
+		ExpiresAt: time.Now().Add(loginCacheTTL).Unix(),
+	}
+	loginCacheMutex.Unlock()
+}
 
 func respondJSON(ctx *fasthttp.RequestCtx, statusCode int, data interface{}) {
 	ctx.Response.Header.Set("Content-Type", "application/json")
@@ -97,13 +150,34 @@ func loginHandler(ctx *fasthttp.RequestCtx) {
 		return
 	}
 
+	// Check the login cache
+	if cachedValid, cached := getCachedLogin(req.Email, req.Password); cached {
+		// If we found a cache entry and it was valid
+		if cachedValid {
+			// Reuse the “valid” result, generate JWT
+			signedToken, err := generateJWT(req.Email)
+			if err != nil {
+				log.Printf("Failed to sign JWT in login: %v", err)
+				respondJSON(ctx, fasthttp.StatusInternalServerError, JSONResponse{Status: "Internal server error"})
+				return
+			}
+			respondJSON(ctx, fasthttp.StatusOK, registerResponse{Status: "OK", Token: signedToken})
+			return
+		} else {
+			// If it was cached and invalid, skip bcrypt and just fail fast
+			respondJSON(ctx, fasthttp.StatusUnauthorized, JSONResponse{Status: "Invalid email or password"})
+			return
+		}
+	}
+
 	// Compare the stored hashed password with the incoming password
 	if err := bcrypt.CompareHashAndPassword([]byte(hashedPwd), []byte(req.Password)); err != nil {
 		respondJSON(ctx, fasthttp.StatusUnauthorized, JSONResponse{Status: "Invalid email or password"})
 		return
 	}
 
-	// Password is correct, generate a new JWT
+	// Password is correct, generate a new JWT, cache it
+	setCachedLogin(req.Email, req.Password, true)
 	signedToken, err := generateJWT(req.Email)
 	if err != nil {
 		log.Printf("Failed to sign JWT in login: %v", err)
@@ -151,7 +225,7 @@ func registerHandler(ctx *fasthttp.RequestCtx) {
 		return
 	}
 
-	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(req.Password), 6)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
 	if err != nil {
 		log.Printf("Failed to hash password: %v", err)
 		respondJSON(ctx, fasthttp.StatusInternalServerError, JSONResponse{Status: "Could not process password"})
