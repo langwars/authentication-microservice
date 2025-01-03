@@ -56,7 +56,7 @@ describe("Unknown Endpoints", () => {
 
 describe("Register Endpoint", () => {
   let jwt: String;
-  test("GET request returns 404", async () => {
+  test("GET request returns 404 or 405", async () => {
     try {
       const url = URL + "/register";
       const response = await fetch(url);
@@ -66,7 +66,7 @@ describe("Register Endpoint", () => {
       expect().fail(`Failed with error: ${e}`);
     }
   });
-  test("DELETE request returns 404", async () => {
+  test("DELETE request returns 404 or 405", async () => {
     try {
       const url = URL + "/register";
       const response = await fetch(url, {

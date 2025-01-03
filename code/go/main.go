@@ -14,7 +14,8 @@ import (
 )
 
 type JSONResponse struct {
-	Status string `json:"status"`
+	Status  string `json:"status"`
+	Success bool   `json:"success"`
 }
 
 type registerResponse struct {
@@ -216,7 +217,7 @@ func deleteHandler(ctx *fasthttp.RequestCtx) {
 	delete(users, email)
 	mu.Unlock()
 
-	respondJSON(ctx, fasthttp.StatusOK, JSONResponse{Status: "OK"})
+	respondJSON(ctx, fasthttp.StatusOK, JSONResponse{Status: "OK", Success: true})
 }
 
 func main() {
