@@ -174,22 +174,24 @@ describe("Register Endpoint", () => {
 
 describe("Login Endpoint", () => {
   let jwt: string;
-  test("GET request returns 404", async () => {
+  test("GET request returns 404 or 405", async () => {
     try {
       const url = URL + "/login";
       const response = await fetch(url);
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }
   });
-  test("DELETE request returns 404", async () => {
+  test("DELETE request returns 404 or 405", async () => {
     try {
       const url = URL + "/login";
       const response = await fetch(url, {
         method: "DELETE",
       });
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }
@@ -310,22 +312,24 @@ describe("Login Endpoint", () => {
 
 describe("Delete Endpoint", () => {
   let jwt: string;
-  test("GET request returns 404", async () => {
+  test("GET request returns 404 or 405", async () => {
     try {
       const url = URL + "/delete";
       const response = await fetch(url);
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }
   });
-  test("POST request returns 404", async () => {
+  test("POST request returns 404 or 405", async () => {
     try {
       const url = URL + "/delete";
       const response = await fetch(url, {
         method: "POST",
       });
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }

@@ -81,6 +81,12 @@ func loginHandler(ctx *fasthttp.RequestCtx) {
 		return
 	}
 
+	// Validate email, return 400 (bad request)
+	if !strings.Contains(req.Email, "@") {
+		respondJSON(ctx, fasthttp.StatusBadRequest, JSONResponse{Status: "Invalid email"})
+		return
+	}
+
 	mu.RLock()
 	hashedPwd, found := users[req.Email]
 	mu.RUnlock()
