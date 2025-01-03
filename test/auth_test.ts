@@ -6,7 +6,7 @@ import * as jose from "jose";
 const SERVER_IP_REMOTE = "192.168.1.222";
 const SERVER_IP_LOCAL = "127.0.0.1";
 const SERVER_PORT = "3000";
-const URL = `http://${SERVER_IP_LOCAL}:${SERVER_PORT}`;
+const URL = `http://${SERVER_IP_REMOTE}:${SERVER_PORT}`;
 
 describe("Unknown Endpoints", () => {
   test("Server is running", async () => {
