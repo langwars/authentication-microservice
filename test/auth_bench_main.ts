@@ -14,7 +14,7 @@ interface Stats {
 
 interface WorkerStats {
   register: { success: boolean; status: number };
-  logins: { successful: number; errored: number };
+  logins: { successful: number; failed: number };
   delete: { success: boolean; status: number };
 }
 
@@ -51,7 +51,7 @@ for (let i = 0; i < WORKER_COUNT; i++) {
 
     // Update login stats
     stats.logins.successful += workerStats.logins.successful;
-    stats.logins.failed += workerStats.logins.errored;
+    stats.logins.failed += workerStats.logins.failed;
 
     // Update delete stats
     if (workerStats.delete.success) stats.delete.successful++;
