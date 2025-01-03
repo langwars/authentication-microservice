@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"runtime"
 	"strings"
 	"sync"
 	"time"
@@ -298,6 +299,14 @@ func deleteHandler(ctx *fasthttp.RequestCtx) {
 	mu.Unlock()
 
 	respondJSON(ctx, fasthttp.StatusOK, JSONResponse{Status: "OK", Success: true})
+}
+
+func init() {
+	// Limit Go to use (NumCPU - 1) cores.
+	cpus := runtime.NumCPU()
+	if cpus > 1 {
+		runtime.GOMAXPROCS(cpus - 1)
+	}
 }
 
 func main() {
