@@ -129,6 +129,21 @@ func registerHandler(ctx *fasthttp.RequestCtx) {
 		return
 	}
 
+	// Validate email
+	if !strings.Contains(req.Email, "@") {
+		respondJSON(ctx, fasthttp.StatusBadRequest, JSONResponse{Status: "Invalid email"})
+		return
+	}
+
+	// If already in use, return 400 (bad request)
+	mu.RLock()
+	_, found := users[req.Email]
+	mu.RUnlock()
+	if found {
+		respondJSON(ctx, fasthttp.StatusBadRequest, JSONResponse{Status: "Email already in use"})
+		return
+	}
+
 	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
 	if err != nil {
 		log.Printf("Failed to hash password: %v", err)

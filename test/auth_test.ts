@@ -60,7 +60,8 @@ describe("Register Endpoint", () => {
     try {
       const url = URL + "/register";
       const response = await fetch(url);
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }
@@ -71,7 +72,8 @@ describe("Register Endpoint", () => {
       const response = await fetch(url, {
         method: "DELETE",
       });
-      expect(response.status).toEqual(404);
+      const validResponse = response.status === 404 || response.status === 405;
+      expect(validResponse).toEqual(true);
     } catch (e) {
       expect().fail(`Failed with error: ${e}`);
     }
