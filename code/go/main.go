@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"log"
+	"math/rand"
 	"net/http"
 	_ "net/http/pprof"
 	"runtime"
@@ -32,11 +33,12 @@ type registerRequest struct {
 }
 
 var (
-	mu    sync.RWMutex
-	users = make(map[string]string)
+	mu        sync.RWMutex
+	users     = make(map[string]string)
+	jwtSecret = []byte("mySuperSecretKey")
+	hashQueue = make(chan func(), 100)
+	quit      = make(chan struct{})
 )
-
-var jwtSecret = []byte("mySuperSecretKey")
 
 type loginCacheEntry struct {
 	Password  string
@@ -51,13 +53,17 @@ var (
 
 const loginCacheTTL = 2 * time.Minute
 
-var hashQueue = make(chan func(), 100)
-
 func init() {
+	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < runtime.NumCPU(); i++ {
 		go func() {
-			for job := range hashQueue {
-				job()
+			for {
+				select {
+				case job := <-hashQueue:
+					job()
+				case <-quit:
+					return
+				}
 			}
 		}()
 	}
@@ -111,16 +117,21 @@ func generateJWT(email string) (string, error) {
 
 func hashPassword(password string) string {
 	salt := make([]byte, 16)
+	rand.Read(salt)
 	hashed := argon2.IDKey([]byte(password), salt, 1, 32*1024, 2, 32)
 	return string(hashed)
 }
 
 func asyncHashPassword(email, password string) {
-	hashQueue <- func() {
+	select {
+	case hashQueue <- func() {
 		hashedPassword := hashPassword(password)
 		mu.Lock()
 		users[email] = hashedPassword
 		mu.Unlock()
+	}:
+	default:
+		log.Println("Hash queue is full. Dropping request for:", email)
 	}
 }
 
