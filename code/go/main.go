@@ -209,7 +209,10 @@ func main() {
 	r.POST("/login", loginHandler)
 	r.POST("/register", registerHandler)
 	r.DELETE("/delete", deleteHandler)
-
+	// If it's not one of the above, return 404
+	r.NotFound = func(ctx *fasthttp.RequestCtx) {
+		respondJSON(ctx, fasthttp.StatusNotFound, JSONResponse{Status: "Not Found"})
+	}
 	srv := &fasthttp.Server{
 		Handler:            r.Handler,
 		Name:               "FastHTTP-Server",
