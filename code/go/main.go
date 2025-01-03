@@ -51,6 +51,18 @@ var (
 
 const loginCacheTTL = 2 * time.Minute
 
+var hashQueue = make(chan func(), 100)
+
+func init() {
+	for i := 0; i < runtime.NumCPU(); i++ {
+		go func() {
+			for job := range hashQueue {
+				job()
+			}
+		}()
+	}
+}
+
 func getCachedLogin(email, password string) (bool, bool) {
 	loginCacheMutex.RLock()
 	entry, ok := loginCache[email]
@@ -99,17 +111,17 @@ func generateJWT(email string) (string, error) {
 
 func hashPassword(password string) string {
 	salt := make([]byte, 16)
-	hashed := argon2.IDKey([]byte(password), salt, 1, 64*1024, 4, 32)
+	hashed := argon2.IDKey([]byte(password), salt, 1, 32*1024, 2, 32)
 	return string(hashed)
 }
 
 func asyncHashPassword(email, password string) {
-	go func() {
+	hashQueue <- func() {
 		hashedPassword := hashPassword(password)
 		mu.Lock()
 		users[email] = hashedPassword
 		mu.Unlock()
-	}()
+	}
 }
 
 func loginHandler(ctx *fasthttp.RequestCtx) {
@@ -146,7 +158,7 @@ func loginHandler(ctx *fasthttp.RequestCtx) {
 		respondJSON(ctx, fasthttp.StatusUnauthorized, JSONResponse{Status: "Invalid email or password"})
 		return
 	}
-	if string(argon2.IDKey([]byte(req.Password), []byte{}, 1, 64*1024, 4, 32)) != hashedPwd {
+	if string(argon2.IDKey([]byte(req.Password), []byte{}, 1, 32*1024, 2, 32)) != hashedPwd {
 		respondJSON(ctx, fasthttp.StatusUnauthorized, JSONResponse{Status: "Invalid email or password"})
 		return
 	}
@@ -220,13 +232,6 @@ func deleteHandler(ctx *fasthttp.RequestCtx) {
 	delete(users, email)
 	mu.Unlock()
 	respondJSON(ctx, fasthttp.StatusOK, JSONResponse{Status: "OK", Success: true})
-}
-
-func init() {
-	cpus := runtime.NumCPU()
-	if cpus > 1 {
-		runtime.GOMAXPROCS(cpus - 1)
-	}
 }
 
 func main() {
