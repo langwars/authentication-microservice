@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"net/http"
 	"runtime"
 	"strings"
 	"sync"
@@ -310,14 +311,22 @@ func init() {
 }
 
 func main() {
+	// Start a separate HTTP server for pprof profiling
+	go func() {
+		log.Println("Starting pprof server on :6060...")
+		log.Println(http.ListenAndServe("localhost:6060", nil))
+	}()
+
 	r := router.New()
 	r.POST("/login", loginHandler)
 	r.POST("/register", registerHandler)
 	r.DELETE("/delete", deleteHandler)
+
 	// If it's not one of the above, return 404
 	r.NotFound = func(ctx *fasthttp.RequestCtx) {
 		respondJSON(ctx, fasthttp.StatusNotFound, JSONResponse{Status: "Not Found"})
 	}
+
 	srv := &fasthttp.Server{
 		Handler:            r.Handler,
 		Name:               "FastHTTP-Server",
